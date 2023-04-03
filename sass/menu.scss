@@ -1,57 +1,7 @@
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  gap: 4px;
-  padding: 22px 0px 22px 25px;
-}
-footer .footer-list {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  color: white;
-}
-footer .footer-list .footer-list__content a {
-  color: white;
-}
-
-.link-footer {
-  padding-left: 8px;
-}
-
-.link-footer2 {
-  padding-left: 2px;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 63px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-}
-header img {
-  width: 162px;
-  height: auto;
-  margin-top: 10px;
-}
-
-button {
-  color: white;
-  border: none;
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  margin: 25px 0px 57px 0px;
-  width: 186px;
-  height: 50px;
-  transition: all 0.3s ease-out 0.2s;
-}
-button:hover {
-  filter: brightness(1.15);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-  transition: all 0.3s ease-out 0.2s;
-}
+@import "./Layout/footer.scss";
+@import "./Layout/header.scss";
+@import "./Utils/variables.scss";
+@import "./Composants/button";
 
 * {
   margin: 0px;
@@ -69,7 +19,6 @@ h2 {
   font-weight: 300;
   font-size: 16px;
 }
-
 h3 {
   font-family: "Roboto";
   font-style: normal;
@@ -78,6 +27,7 @@ h3 {
 }
 
 /******  header *****/
+
 header .fa-arrow-left {
   position: absolute;
   width: 17.2px;
@@ -85,7 +35,6 @@ header .fa-arrow-left {
   top: 32px;
   color: #000;
 }
-
 /****baniere***/
 .picture img {
   width: 100%;
@@ -95,6 +44,7 @@ header .fa-arrow-left {
 }
 
 /*animation menu*/
+
 .menu__card {
   animation: arrived 1.5s ease-in-out 0.5s forwards;
   opacity: 0;
@@ -111,20 +61,25 @@ header .fa-arrow-left {
 }
 
 /* keyframes*/
+
 @keyframes arrived {
   0% {
     opacity: 0;
     margin-left: -30px;
     margin-right: -30px;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 /*****menu****/
+
 .menu {
   background-color: #f7f7f7;
   border-top-right-radius: 25px;
@@ -135,22 +90,22 @@ header .fa-arrow-left {
   position: relative;
   gap: 40px;
   flex-direction: column;
-}
-.menu__title {
+
+    &__title {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 32px 17px 0px 17px;
   width: 100%;
+             }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0px 13px 0px 13px;
+      }
 }
-.menu__card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 0px 13px 0px 13px;
-}
-
 .menu__title h1 {
   font-family: "Shrikhand";
   font-style: italic;
@@ -158,7 +113,6 @@ header .fa-arrow-left {
   font-size: 28px;
   line-height: 41px;
 }
-
 .menu__title .fa-regular {
   margin-right: -28px;
 }
@@ -177,7 +131,6 @@ header .fa-arrow-left {
   opacity: 1;
   transition: all 0.5s ease-in 0.2s;
 }
-
 .menu__title__icon {
   padding-right: 14px;
 }
@@ -188,7 +141,6 @@ header .fa-arrow-left {
   font-weight: 300;
   font-size: 15.0431px;
 }
-
 .menu .price {
   font-family: "Roboto";
   font-style: normal;
@@ -196,7 +148,6 @@ header .fa-arrow-left {
   font-size: 15.0431px;
   margin-bottom: 12px;
 }
-
 .menu__card__content {
   display: flex;
   flex-direction: row;
@@ -209,13 +160,11 @@ header .fa-arrow-left {
   overflow: hidden;
   transition: all 0.3s ease-in 0.1s;
 }
-
 .menu__card__content:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: all 0.3s ease-in 0.1s;
 }
-
 .menu__card__content .name {
   display: flex;
   flex-direction: column;
@@ -223,7 +172,6 @@ header .fa-arrow-left {
   width: 85%;
   margin-bottom: 12px;
 }
-
 .menu__card__title::after {
   content: "";
   display: block;
@@ -232,7 +180,6 @@ header .fa-arrow-left {
   background: #99e2d0;
   margin-top: 10px;
 }
-
 .menu__card__content .ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -249,13 +196,11 @@ header .fa-arrow-left {
   font-size: 31px;
   padding-left: 15px;
 }
-
 .price-check {
   display: flex;
   gap: 10px;
   align-items: flex-end;
 }
-
 i.fa-circle-check {
   background-color: #fff;
   width: 30px;
@@ -263,7 +208,6 @@ i.fa-circle-check {
   border-radius: 20px;
   color: #99e2d0;
 }
-
 .menu__card__content .price-check {
   margin-right: -60px;
   transition: transform 0.5s ease-in;
@@ -273,12 +217,13 @@ i.fa-circle-check {
   transform: translateX(-60px);
   transition: transform 0.5s ease-in;
 }
-
 /******button*****/
 .button {
   display: flex;
   justify-content: center;
 }
+
+
 
 @media screen and (min-width: 768px) {
   .menu {
@@ -314,15 +259,18 @@ i.fa-circle-check {
     align-items: flex-end;
     padding-bottom: 12px;
   }
+
   @keyframes arrived {
     0% {
       opacity: 0;
       margin-left: -80px;
       margin-right: -80px;
     }
+
     50% {
       opacity: 0.5;
     }
+
     100% {
       opacity: 1;
     }
@@ -354,5 +302,3 @@ i.fa-circle-check {
     padding-right: 210px;
   }
 }
-
-/*# sourceMappingURL=menu.css.map */

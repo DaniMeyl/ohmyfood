@@ -1,8 +1,7 @@
-$maincolor: #9356dc;
-$secondcolor: #ff79da;
-$tercolor: #99e2d0;
-$greyback: #eaeaea;
-$greyback2: #f6f6f6;
+@import "./Layout/footer.scss";
+@import "./Layout/header.scss";
+@import "./Utils/variables.scss";
+@import "./Composants/button";
 
 * {
   margin: 0px;
@@ -23,7 +22,8 @@ h2 {
   font-size: 18px;
 }
 
-//fonctionnement//
+//Loader//
+
 .loader {
   display: flex;
   gap: 15px;
@@ -32,7 +32,7 @@ h2 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: darken($color: #f5edff, $amount: 11%);
+  background-color: darken($color: $seoncdcolor-light, $amount: 11%);
   opacity: 1;
   animation: loader 5s linear forwards;
   position: fixed;
@@ -95,21 +95,8 @@ h2 {
     background-color: $tercolor;
   }
 }
-//header//
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 63px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
-  img {
-    width: 162px;
-    height: auto;
-    margin-top: 10px;
-  }
-}
-
+// location //
 .location {
   display: flex;
   justify-content: center;
@@ -135,7 +122,7 @@ header {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
-
+//entete//
 .entete {
   display: flex;
   flex-direction: column;
@@ -154,26 +141,7 @@ header {
     margin: 18px 26px 0px 34px;
     text-align: center;
   }
-  button {
-    color: white;
-    border: none;
-    background: linear-gradient(
-      200.64deg,
-      $maincolor -5.2%,
-      $secondcolor 110.74%
-    );
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    margin: 25px 0px 57px 0px;
-    width: 186px;
-    height: 50px;
-    transition: all 0.3s ease-out 0.2s;
-    &:hover {
-      filter: brightness(1.15);
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-      transition: all 0.3s ease-out 0.2s;
-    }
-  }
+ @include button
 }
 
 //fonctionnement//
@@ -317,7 +285,7 @@ header {
 }
 
 .restaurant .fa-solid {
-  background-image: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background-image: linear-gradient(200.64deg, $maincolor -5.2%, $secondcolor 110.74%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -329,33 +297,6 @@ header {
 .restaurant .fa-solid:hover {
   opacity: 1;
   transition: all 0.5s ease-in 0.2s;
-}
-
-//*Footer*//
-
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  gap: 4px;
-  padding: 22px 0px 22px 25px;
-}
-.footer-list {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  color: white;
-}
-.footer-list__content {
-  a {
-    color: white;
-  }
-}
-.link-footer {
-  padding-left: 8px;
-}
-.link-footer2 {
-  padding-left: 2px;
 }
 
 /*Media Queries Tablette*/
@@ -391,14 +332,14 @@ footer {
   .restaurant {
     padding-left: 50px;
     padding-right: 50px;
-  }
 
-  .restaurant__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: space-between;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: space-between;
+    }
   }
   .restaurant__container__card {
     width: 46%;
@@ -421,7 +362,7 @@ footer {
   footer {
     flex-direction: row-reverse;
     padding-right: 60px;
-    padding-bottom:14px;
+    padding-bottom: 14px;
     height: 114px;
   }
   .footer-list {

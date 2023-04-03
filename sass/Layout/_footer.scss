@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    gap: 4px;
+    padding: 22px 0px 22px 25px;
+  
+    .footer-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      color: white;
+  
+      .footer-list__content {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .link-footer {
+    padding-left: 8px;
+  }
+  .link-footer2 {
+    padding-left: 2px;
+  }
