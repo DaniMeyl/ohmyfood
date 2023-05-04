@@ -58,7 +58,7 @@ h2 {
   background-color: #278870;
   border-radius: 50%;
   margin-top: 15px;
-  animation: spin 1.5s ease-in-out 2 both;
+  animation: spin 1.5s ease-in 2 both;
   transform: scale(1);
   animation-delay: 1s;
   z-index: 200;
