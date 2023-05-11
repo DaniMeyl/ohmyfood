@@ -162,12 +162,12 @@ header img {
   margin: 25px 0px 57px 0px;
   width: 186px;
   height: 50px;
-  transition: all 0.3s ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out 0.1s;
 }
 .entete button:hover {
   filter: brightness(1.15);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-  transition: all 0.3s ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out 0.1s;
 }
 
 /* fonctionnement */
@@ -420,8 +420,8 @@ footer .footer-list .footer-list__content a {
     padding-bottom: 14px;
     height: 114px;
   }
-  .footer-list {
-    flex-direction: row;
+  footer .footer-list {
+    flex-direction: row !important;
     align-items: self-end;
     margin-right: 50px;
     gap: 20px;

@@ -365,8 +365,8 @@ h2 {
     padding-bottom: 14px;
     height: 114px;
   }
-  .footer-list {
-    flex-direction: row;
+  footer .footer-list {
+    flex-direction: row !important;
     align-items: self-end;
     margin-right: 50px;
     gap: 20px;
