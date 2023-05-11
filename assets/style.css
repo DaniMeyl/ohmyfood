@@ -19,6 +19,7 @@ h2 {
   font-size: 18px;
 }
 
+/* Loader */
 .loader {
   display: flex;
   gap: 15px;
@@ -58,7 +59,7 @@ h2 {
   background-color: #278870;
   border-radius: 50%;
   margin-top: 15px;
-  animation: spin 1.5s ease-in 2 both;
+  animation: level-up 1.5s ease-in-out 2 both;
   transform: scale(1);
   animation-delay: 1s;
   z-index: 200;
@@ -81,7 +82,7 @@ h2 {
   animation-delay: 2.2s;
 }
 
-@keyframes spin {
+@keyframes level-up {
   0%, 40%, 100% {
     transform: translateY(60px);
   }
@@ -90,6 +91,7 @@ h2 {
     background-color: #99e2d0;
   }
 }
+/* header */
 header {
   display: flex;
   justify-content: center;
@@ -103,6 +105,7 @@ header img {
   margin-top: 10px;
 }
 
+/* location */
 .location {
   display: flex;
   justify-content: center;
@@ -130,6 +133,7 @@ header img {
   cursor: pointer;
 }
 
+/* entete */
 .entete {
   display: flex;
   flex-direction: column;
@@ -166,6 +170,7 @@ header img {
   transition: all 0.3s ease-out 0.2s;
 }
 
+/* fonctionnement */
 .fonctionnement {
   margin: 48px 20px 68px 20px;
   gap: 25px;
@@ -229,6 +234,7 @@ header img {
   background-color: #f5edff;
 }
 
+/** restaurant **/
 .restaurant {
   padding: 55px 20px 30px 20px;
   display: flex;
@@ -319,14 +325,15 @@ header img {
   color: transparent;
   line-height: 1;
   opacity: 0;
-  transition: all 0.3s ease-in 0.1s;
+  transition: all 1s ease-in 0.1s;
 }
 
 .restaurant .fa-solid:hover {
   opacity: 1;
-  transition: all 0.5s ease-in 0.2s;
+  transition: all 0.1s ease-in;
 }
 
+/** footer **/
 footer {
   display: flex;
   flex-direction: column;
@@ -334,15 +341,13 @@ footer {
   gap: 4px;
   padding: 22px 0px 22px 25px;
 }
-
-.footer-list {
+footer .footer-list {
   display: flex;
   flex-direction: column;
   gap: 7px;
   color: white;
 }
-
-.footer-list__content a {
+footer .footer-list .footer-list__content a {
   color: white;
 }
 
