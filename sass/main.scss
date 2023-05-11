@@ -290,12 +290,12 @@ h2 {
   color: transparent;
   line-height: 1;
   opacity: 0;
-  transition: all 1s ease-in 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
 }
 
 .restaurant .fa-solid:hover {
   opacity: 1;
-  transition: all 0.1s ease-in ;
+  transition: all 0.3s ease-in-out ;
 }
  /** footer **/ 
  @import "./Layout/footer.scss";
