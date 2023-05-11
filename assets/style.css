@@ -84,10 +84,10 @@ h2 {
 
 @keyframes level-up {
   0%, 40%, 100% {
-    transform: translateY(60px);
+    transform: translateY(0px);
   }
   20% {
-    transform: translateY(0) scaleY(2.5) scaleX(1.5);
+    transform: translateY(-60px) scaleY(2.5) scaleX(1.5);
     background-color: #99e2d0;
   }
 }
