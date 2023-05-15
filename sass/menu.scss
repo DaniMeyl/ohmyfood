@@ -172,8 +172,10 @@ header .fa-arrow-left {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  transition: width 0.5s ;
 }
-.menu__card__content:hover .name{width:65%}
+.menu__card__content:hover .name{
+  width:65%}
 
 .menu__card__title::after {
   content: "";
