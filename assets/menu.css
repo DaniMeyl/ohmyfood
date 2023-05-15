@@ -176,11 +176,15 @@ header .fa-arrow-left {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 65%;
+  width: 85%;
   margin-bottom: 12px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.menu__card__content:hover .name {
+  width: 65%;
 }
 
 .menu__card__title::after {
