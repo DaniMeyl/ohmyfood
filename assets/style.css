@@ -166,6 +166,10 @@ h3 {
   font-weight: 500;
 }
 
+.fonctionnement h2 {
+  font-size: 24px;
+}
+
 .fonctionnement__block__card {
   display: flex;
   flex-direction: row;
@@ -224,6 +228,10 @@ h3 {
   flex-direction: column;
   gap: 30px;
   background-color: #f6f6f6;
+}
+
+.restaurant h2 {
+  font-size: 24px;
 }
 
 .new {

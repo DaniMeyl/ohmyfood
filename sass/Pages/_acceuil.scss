@@ -138,6 +138,9 @@
     font-size: 16px;
     font-weight: 500;
   }
+  .fonctionnement h2 {
+    font-size: 24px;
+  }
   
   .fonctionnement__block__card {
     display: flex;
@@ -197,6 +200,9 @@
     flex-direction: column;
     gap: 30px;
     background-color: $greyback2;
+  }
+  .restaurant h2{
+    font-size:24px;
   }
   .new {
     z-index: 10;
