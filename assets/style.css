@@ -185,6 +185,12 @@ header img {
   gap: 25px;
 }
 
+.fonctionnement p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .fonctionnement__block__card {
   display: flex;
   flex-direction: row;
@@ -290,6 +296,12 @@ header img {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 17px;
+}
+
+.restaurant h3 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .restaurant__container__card img {
