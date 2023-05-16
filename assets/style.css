@@ -457,6 +457,24 @@ header .fa-arrow-left {
   line-height: 41px;
 }
 
+.menu__card__title {
+  font-weight: 300;
+}
+
+.menu__card__title h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.menu__card__title p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+}
+
 .menu__title .fa-regular {
   margin-right: -28px;
 }
@@ -484,7 +502,7 @@ header .fa-arrow-left {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 15.0431px;
+  font-size: 15px;
 }
 
 .menu .price {
@@ -581,6 +599,10 @@ i.fa-circle-check {
 .button {
   display: flex;
   justify-content: center;
+}
+
+.menu button {
+  width: 185px !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -703,10 +725,16 @@ button {
   color: white;
   border: none;
   background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  padding: 13px 18.75px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   margin: 25px 0px 57px 0px;
-  width: 186px;
+  width: 220px;
   height: 50px;
   transition: all 0.3s ease-in-out 0.1s;
 }

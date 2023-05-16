@@ -85,6 +85,20 @@ header .fa-arrow-left {
     font-size: 28px;
     line-height: 41px;
   }
+  .menu__card__title  
+  {font-weight: 300;}
+  .menu__card__title h3 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+  }
+  .menu__card__title p {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+  }
   .menu__title .fa-regular {
     margin-right: -28px;
   }
@@ -111,7 +125,7 @@ header .fa-arrow-left {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    font-size: 15.0431px;
+    font-size: 15px;
   }
   .menu .price {
     font-family: "Roboto";
@@ -201,7 +215,10 @@ header .fa-arrow-left {
   .button {
     display: flex;
     justify-content: center;
+   
   }
+  .menu button { width:185px !important;}
+ 
   
 
  
